@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Eliment</title>
+    <style>
+      blockquote::before {
+        content: open-quote;
+        color: blue;
+        font-size: 2em;
+      }
+      blockquote::after {
+        content: close-quote;
+        color: blue;
+        font-size: 2em;
+      }
+      .section-title {
+        display: inline-block;
+      }
+      .section-title::after,
+      .section-title:hover::before {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: blue;
+      }
+      label::after {
+        content: " *";
+        color: red;
+      }
+      label.not-required::after {
+        content: "";
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Having fun with pseudo Eliment</h1>
+
+    <section>
+      <h2 class="section-title">Best Quotes</h2>
+      <blockquote>
+        Patience, persistence and perspiration make an unbeatable combination
+        for success.
+      </blockquote>
+      <blockquote>
+        Desire is the starting point of all achievement, not a hope, not a wish,
+        but a keen pulsating desire which transcends everything.
+      </blockquote>
+      <blockquote>
+        Strength and growth come only through continuous effort and struggle…
+      </blockquote>
+    </section>
+
+    <section class="container">
+      <h1>Demo form</h1>
+
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" placeholder="Enter your email" name="" id="" />
+      </div>
+      <div>
+        <label for="password">Password: </label>
+        <input
+          type="password"
+          placeholder="Enter your password"
+          name=""
+          id=""
+        />
+      </div>
+      <div>
+        <label class="not-required" for="checkbox">
+          <input type="checkbox" name="" id="" /> Remember me</label
+        >
+      </div>
+    </section>
+  </body>
+</html>

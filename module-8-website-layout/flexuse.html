@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      <!-- src="https://kit.fontawesome.com/16c3a6b798.js"
+      crossorigin="anonymous" -->
+    ></script>
+    <title>Flex Use</title>
+    <style>
+      .login-container {
+        display: flex;
+        justify-content: center;
+      }
+      .login-form {
+        display: flex;
+        flex-direction: column;
+      }
+      .login-form input,
+      button {
+        font-size: 1em;
+        margin-top: 15px;
+        border: 2px solid rgb(228, 228, 48);
+        padding-left: 10px;
+        border-radius: 5px;
+      }
+      .login-form button {
+        background-color: orange;
+        color: white;
+        font-weight: 700;
+        border-radius: 10px;
+        border: 0;
+        padding: 5px;
+      }
+      nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+        margin-right: 5px;
+      }
+      nav{
+          display: flex;
+          justify-content: space-between;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+
+      <nav>
+
+       <span>
+        <a href="">Home</a>
+        <a href="">Product</a>
+        <a href="">Orders</a>
+        <a href="">About Us</a>
+       </span>
+
+        <span>
+            <a href=""><i class="fas fa-users"></i></a>
+      <a href=""><i class="fas fa-sign-out-alt"></i></i></a>
+        </span>
+
+      </nav>
+    </header>
+
+    <section class="login-container">
+      <form action="" class="login-form">
+        <h2>Login</h2>
+        <input
+          type="email"
+          name="email"
+          id=""
+          placeholder="Enter your email"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id=""
+          placeholder="Your password"
+          required
+        />
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </body>
+</html>

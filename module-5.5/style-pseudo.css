@@ -1,0 +1,34 @@
+h1:hover {
+  color: royalblue;
+  background-color: skyblue;
+}
+.middle-person:focus {
+  color: blue;
+}
+a:visited {
+  color: red;
+}
+button:hover {
+  color: red;
+}
+li:first-child {
+  color: chocolate;
+}
+li:last-child {
+  background-color: cornsilk;
+}
+li:nth-child(2n) {
+  background-color: crimson;
+}
+li:nth-child(2n + 1) {
+  background-color: cyan;
+}
+h2::before {
+  content: "Hello ";
+}
+.special::after {
+  content: "gelo ";
+  background-color: darkgrey;
+  color: brown;
+  font-size: 20px;
+}

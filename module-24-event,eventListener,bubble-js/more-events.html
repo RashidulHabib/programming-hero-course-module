@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>More Events</h2>
+    <section>
+      <h3 id="secret-info">Very very important secret information</h3>
+      <input
+        id="delete-confirm"
+        type="text"
+        placeholder="please type 'delete'"
+      />
+      <button id="delete-button" disabled>Delete</button>
+    </section>
+
+    <script>
+      document
+        .getElementById("delete-button")
+        .addEventListener("click", function () {
+          document.getElementById("secret-info").style.display = "none";
+        });
+
+      //NOTE: focus
+      document
+        .getElementById("delete-confirm")
+        .addEventListener("focus", function () {
+          document.body.style.backgroundColor = "lightcoral";
+        });
+      //NOTE: blur
+      document
+        .getElementById("delete-confirm")
+        .addEventListener("blur", function () {
+          document.body.style.backgroundColor = "white";
+        });
+      /*  //NOTE: keydown
+      document
+        .getElementById("delete-confirm")
+        .addEventListener("keydown", function () {
+          const inputField = document.getElementById("delete-confirm");
+          console.log(inputField.value);
+        }); */
+      /* //NOTE: keypress
+      document
+        .getElementById("delete-confirm")
+        .addEventListener("keypress", function () {
+          const inputField = document.getElementById("delete-confirm");
+          console.log(inputField.value);
+        }); */
+      /*  //NOTE: keyup
+      document
+        .getElementById("delete-confirm")
+        .addEventListener("keyup", function () {
+          const inputField = document.getElementById("delete-confirm");
+          console.log(inputField.value);
+        }); */
+      //NOTE: keyup & check
+      document
+        .getElementById("delete-confirm")
+        // REVIEW: adding a event here...
+        .addEventListener("keyup", function (event) {
+          const inputField = document.getElementById("delete-confirm");
+          //REVIEW: whatISDOing->whereInputTaking->WhatInputTaking
+          if (event.target.value == "delete") {
+            document
+              .getElementById("delete-button")
+              .removeAttribute("disabled");
+          } else {
+            document
+              .getElementById("delete-button")
+              .setAttribute("disabled", true);
+          }
+        });
+      //NOTE: change
+      document
+        .getElementById("delete-confirm")
+        .addEventListener("change", function () {
+          const inputField = document.getElementById("delete-confirm");
+          console.log(inputField.value);
+        });
+    </script>
+  </body>
+</html>

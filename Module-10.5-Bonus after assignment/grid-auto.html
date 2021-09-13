@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex & Grid One more</title>
+    <style>
+      #user {
+        height: 200px;
+        width: 200px;
+        border-color: red;
+        background-color: antiquewhite;
+      }
+      .grid {
+        display: grid;
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        grid-auto-flow: column;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="grid">
+      <div id="user" class="user">
+        <h2>user-1</h2>
+      </div>
+      <div id="user" class="user">
+        <h2>user-2</h2>
+      </div>
+      <div id="user" class="user">
+        <h2>user-3</h2>
+      </div>
+      <div id="user" class="user">
+        <h2>user-4</h2>
+      </div>
+      <div id="user" class="user">
+        <h2>user-5</h2>
+      </div>
+      <div id="user" class="user">
+        <h2>user-6</h2>
+      </div>
+      <div id="user" class="user">
+        <h2>user-7</h2>
+      </div>
+      <div id="user" class="user">
+        <h2>user-8</h2>
+      </div>
+      <div id="user" class="user">
+        <h2>user-9</h2>
+      </div>
+      <div id="user" class="user">
+        <h2>user-10</h2>
+      </div>
+    </section>
+  </body>
+</html>

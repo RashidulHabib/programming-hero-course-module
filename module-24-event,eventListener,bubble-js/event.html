@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <h1 onclick="console.log('h1 is clicked')">Event nea Clickbaji</h1>
+
+    <!--SECTION: onclick event add 
+        NOTE: this system is not recommended...
+        REVIEW: Number-1
+     -->
+    <button onclick="document.body.style.backgroundColor='yellow'">
+      click Me: yellow
+    </button>
+
+    <!-- REVIEW: Number-2: another onclick by calling js function -->
+    <button onclick="makeRed()">click me: red</button>
+
+    <!-- REVIEW: Number-3: this is another way by calling html tag in js... -->
+    <button id="click-green">click me: green</button>
+
+    <!-- REVIEW: Number-4: By calling html tag in js but making anonymous function -->
+    <button id="click-blue">click me: blue</button>
+
+    <!--REVIEW: Number-5: using eventListiner -->
+    <button id="clickGoldenRod">click me: Golden rod</button>
+
+    <!--REVIEW: Number-6: eventListiner and anonymous function  -->
+    <button id="clickIndigo">click me: indigo</button>
+
+    <!--REVIEW: Number-7: direct shortcut -->
+    <button id="clickLightBlue">click me: Light blue</button>
+
+    <!-- js linking -->
+    <script src="js/events.js"></script>
+  </body>
+</html>

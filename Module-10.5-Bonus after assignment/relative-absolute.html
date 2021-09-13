@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        border: 2px solid red;
+      }
+      .container {
+        border: 3px dashed blue;
+        /* box-2 আগে সরছে body এর হিসাবে, কারন কনটেইনার এর কনো পজিশন ছিলো না। কিন্তু এখন কনটেইনারকে যদি পজিশন দেই তাহলে যা হবে---- */
+        position: absolute;
+      }
+      .box {
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+      }
+      #box-1 {
+        background-color: aquamarine;
+      }
+      #box-2 {
+        background-color: palegreen;
+        /* when relative- তার জায়গা থাকবে কিন্তু সে তার স্থান থেকে সরে যাবে */
+        /* position: relative;
+        top: -30px;
+        left: 80px; */
+
+        /* when absolute- তার জায়গা আর থাকবে না। যেহেতু জায়গা নাই, সে সরবে পুরো body এর প্রেক্ষিতে। বা তার পূর্ববর্তী কার পজিশন আছে, তার অবস্থান অনুযায়ী সরবে। */
+        position: absolute;
+        top: 0;
+        left: 50px;
+      }
+      #box-3 {
+        background-color: plum;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Explore Relative and Absolute one more time</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima saepe,
+      maxime voluptates et cumque quod consequatur dicta sint. Repellendus natus
+      eligendi sunt culpa eum iure magni doloribus aliquid ab dolorum.
+    </p>
+    <div class="container">
+      <div class="box" id="box-1">box-1</div>
+      <div class="box" id="box-2">box-2</div>
+      <div class="box" id="box-3">box-3</div>
+    </div>
+  </body>
+</html>

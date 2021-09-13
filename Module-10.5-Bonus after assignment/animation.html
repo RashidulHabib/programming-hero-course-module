@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      .text-pop-up-bottom {
+        -webkit-animation: text-pop-up-bottom 1s
+          cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: text-pop-up-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+          both;
+      }
+
+      .box {
+        font-size: 4em;
+        background-color: coral;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I am exploring easy and fun animation</h1>
+    <h1 class="animate__animated animate__bounce">An animated element</h1>
+    <section>
+      <div class="box animate__animated animate__hinge">abcd...</div>
+    </section>
+
+    <section>
+      <div class="box-2 text-pop-up-bottom">হ য ব র ল...</div>
+    </section>
+  </body>
+</html>
